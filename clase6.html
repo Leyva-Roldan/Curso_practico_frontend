@@ -24,6 +24,58 @@
         margin: 0;
         font-family: 'Quicksand', sans-serif;
     }
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 25px;
+        place-content: center;
+    }
+    .product-card {
+        width: 240px;
+    }
+    .product-card img {
+        width: 240px;
+        height: 240px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+    }
+    .product-info div p:nth-child(1) {
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0;
+        margin-bottom: 4px;
+    }
+    .product-info div p:nth-child(2) {
+        font-size: var(--sm);
+        margin-top: 0;
+        margin-bottom: 0;
+        color: var(--very-light-pink);
+    }
+    .product-info figure img {
+        width: 35px;
+        height: 35px;
+    }
+    .product-info figure {
+        margin: 0;
+    }
+    @media (max-width: 640px) {
+        .cards-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+        }
+        .product-card {
+        width: 140px;
+        }
+        .product-card img {
+        width: 140px;
+        height: 140px;
+        }
+    }
     </style>
 </head>
 <body>
@@ -32,6 +84,7 @@
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -39,10 +92,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -50,10 +105,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -61,10 +118,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -72,10 +131,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -83,10 +144,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -94,10 +157,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -105,10 +170,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -116,10 +183,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -127,10 +196,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -138,10 +209,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -149,10 +222,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -160,10 +235,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -171,10 +248,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -182,10 +261,12 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="product-img">
+                <div class="product-info">
                 <div>
                     <p>$130,00</p>
                     <p>Bike</p>
@@ -193,6 +274,7 @@
                 <figure>
                     <img src="./assests/Platzi_YardSale_Icons-20211110T003303Z-001/Platzi_YardSale_Icons/bt_add_to_cart.svg" alt="">
                 </figure>
+                </div>
             </div>
 
         </div>
